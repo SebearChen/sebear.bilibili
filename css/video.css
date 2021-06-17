@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+[class*="col-"] {
+    margin:0 auto;
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 20%;}
+    .col-2 {width: 70%;}
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dian {
+    display: flex;
+    flex-direction: row;
+}
+  
+#zan{
+    padding-left:220px;
+    width: 55px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 70px;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#bi{
+    width: 55px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+}
+#shou{
+    width: 55px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#zan img,
+#bi img,
+#shou img{
+    width: 35px;
+    height: 35px;
+    margin: 5px 5px 0 5px;
+}
+
+#zan #num1,
+#bi #num2,
+#shou #num3{
+  font-size: 15px;
+  line-height: 42px;
+  margin-right: 3px;
+  
+}

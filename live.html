@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>直播 - Sebear</title>
+  <link rel="shortcut icon" href="images/title.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <header id="header">
+   <!--  header-top   -->
+    <div id="page_top">
+      <div class="bg-wrap"><!--  背景  -->
+        <div class="bg"></div>
+        <div class="mask"></div>
+      </div>
+      
+      <div class="header-top">
+        <div class="page-width clearfix"><!--  装着左和右的box  -->
+         
+          <div class="header-top__nav"><!--  header-top左边   -->
+            <ul >
+              <li class="item item-home" >
+                <a href="index.html">首页</a>
+              </li>
+              <li class="item"><a href="app.download.html" target="_blank">下载APP</a></li>
+              <li class="item"><a href="call.html" target="_blank">联系客服</a></li>
+            </ul>
+          </div>
+          
+          <div class="header-top__user"><!--  herder-top右边   -->
+            <div class="login-box">
+              <a href="login.html">登录</a>
+              <span></span>
+              <a href="register.html">注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="header-c"><!---   header外层    -->
+      <div class="page-width"><!---   header内层    -->
+        <p id="header_title"></p>
+        <div id="search" class="clearfix"><!---   搜索    -->
+          <div class="search-rank"><a href="#">排行榜</a></div>
+          <div class="search-box">
+            <input type="text" class="text" placeholder="搜索电影、电视剧、综艺、影人">
+            <a href="search.html" class="btn"><i></i></a>
+            <div class="search-history">
+              <div class="title"><a href="#">排行榜</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-title">献给胶片电影时代</div>
+      </div>
+    </div>
+  </header>
+
+  <div id="main">
+    <div class="page-width">
+
+      <nav id="nav">
+        <div class="page-width clearfix">
+          <ul class="nav-list">
+            <li class="item item-home">
+              <a href="index.html" class="link">首页</a>
+            </li>
+            <li class="item">
+              <a href="hotmovie.html" class="link">
+                <div class="num"><i>189</i></div>
+                热门电影
+              </a>
+            </li>
+            <li class="item">
+                <a href="hottv.html" class="link">
+                  <div class="num"><i>233</i></div>
+                  热门电视剧
+                </a>
+              </li>
+              <li class="item">
+                <a href="live.html" class="link">
+                  <div class="num"><i>2</i></div>
+                  正在直播
+                </a>
+              </li>
+        </div>
+      </nav>
+
+       <!-- 直播 -->
+      <div class="mainCont clearfix" id="live" js-move="true">
+        <div class="pic-list fl">
+          <div class="pic-list__title">
+            <h2>正在直播</h2>
+            <p class="live-online">当前共有<em>2</em>个在线直播</p>
+          </div>
+          <ul class="pic-list__wrapper clearfix">
+            <li class="item">
+              <a href="#" class="img-link">
+                <img src="images/cont/actor1.png" alt="#">
+                <span class="mask"></span>
+                <span class="category">演员</span>
+                <img class="headImg" src="images/cont/actor11.png" alt="#">
+                <i class="icon-live">Live</i>
+              </a>
+              <div class="img-info">
+                <a href="#"> </a>
+                <div class="btm">
+                  <div class="user"><i></i>刘德华</div>
+                  <div class="online"><i></i>888</div>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <a href="#" class="img-link">
+                <img src="images/cont/actor2.png" alt="#">
+                <span class="mask"></span>
+                <span class="category">导演</span>
+                <img class="headImg" src="images/cont/actor22.png" alt="#">
+                <i class="icon-live">Live</i>
+              </a>
+              <div class="img-info">
+                <a href="#"></a>
+                <div class="btm">
+                  <div class="user"><i></i>张艺谋</div>
+                  <div class="online"><i></i>188</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="page-width">
+      <ul class="footer-c clearfix">
+         <li>
+           <h6>Sebear</h6>
+           <a href="about.html" target="_blank" class="card">关于我们</a>
+           <a href="#" class="card">联系我们</a>
+         </li>
+         <li class="middle">
+           <h6>传送门</h6>
+           <a href="#" class="card">帮助中心</a>
+           <a href="call.html" target="_blank" class="card" >联系客服</a>
+         </li>
+         <li class="footer-icon">
+           <div class="cont">
+             <a href="#" class="app">
+               <i></i>
+               <em>手机端下载</em>
+               <img src="images/qrcode.png" alt="#">
+             </a>
+             <a href="#" class="weibo">
+               <i></i>
+               <em>新浪微博</em>
+               <img src="images/qrcode.png" alt="#">
+             </a>
+             <a href="#" class="weixin">
+               <i></i>
+               <em>官方微信</em>
+               <img src="images/qrcode.png" alt="#">
+             </a>
+           </div>
+         </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

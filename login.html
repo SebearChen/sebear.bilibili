@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录 — Sebear</title>
+    <link rel="shortcut icon" href="images/title.png">
+    <link rel="stylesheet" href="./css/LR_style.css">
+</head>
+
+<body>
+    <div id='app' class="container">
+        <img src="./images/login_bg.png" />
+        <div class="panel">
+            <div class="content login">
+                <div class="switch">
+                    <span :class='{"active": active === "login"}' @click='go("login")'>登录</span>
+                    <span>/</span>
+                    <a href="register.html" class="link">注册</a>
+                </div>
+                <div class='form' id="formLogin">
+                    <div class="input"><input type="text" name="user_name" id="user_name" /><label
+                            for="username">用户名</label></div>
+                    <div class="input"><input type="password" name="user_password" id="user_password" /><label
+                            for="Password">密码</label></div>
+                    <button type="submit" id="login">登录</button>
+                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;忘记密码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/login_pure.js"></script>
+</body>
+
+</html>

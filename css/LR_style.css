@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: miaowu;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container {
+    position: relative;
+    width: 155rem;
+}
+
+.container img {
+    width: 91rem;
+}
+
+.switch span {
+    color:  #2196f3;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.switch span.active {
+    color:  #2196f3;
+}
+
+.panel {
+    width: 26%;
+    padding: 10rem 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 16rem;
+    margin: 3rem 0 0;
+}
+
+.form .input {
+    position: relative;
+    opacity: 1;
+    height: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+    transition: .4s;
+}
+
+.input input {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: .1rem solid  #2196f3;
+    position: relative;
+    line-height: 35px;
+    background: transparent;
+    z-index: 1;
+}
+
+.input label {
+    position: absolute;
+    left: 0;
+    top: -35%;
+    font-size: 1.2rem;
+    color: #2196f3;
+    transition: .3s;
+}   
+
+.input input:focus ~ label {
+    top: -50%;
+}
+
+.form span {
+    display: block;
+    color:  #2196f3;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.form button {
+    border: none;
+    outline: none;
+    margin: 2.5rem 0 0;
+    width: 65%;
+    height: 3rem;
+    border-radius: 3rem;
+    background: linear-gradient(90deg, rgb(108, 99, 235), rgb(126, 106, 238));
+    box-shadow: 0 0 8px rgb(181, 154, 254);
+    cursor: pointer;
+    color: white;
+    font-family: miaowu;
+}
+
+#live2dcanvas {
+    border: 0 !important;
+}
